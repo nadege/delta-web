@@ -75,6 +75,7 @@ function initKmlMap(mapID, kmlFileUrl, kmlFileUrl2) {
   });
   console.log(myLayer)
 
+
   if (kmlFileUrl2)
   {
     var myLayer2 = new google.maps.KmlLayer({
@@ -82,10 +83,7 @@ function initKmlMap(mapID, kmlFileUrl, kmlFileUrl2) {
       map : myMap,
       zIndex: 1
     });
-
-    myLayer2.addListener('status_changed', function() {
-        alert(myLayer2.getStatus());
-    });
+    console.log(myLayer2)
 
   } 
 
@@ -100,9 +98,6 @@ function addLayerToMap(map, kmlFileUrl, infoWindow, zIndex){
     map : map,
     zIndex: zIndex
   });
-
-  /*layer.addListener('status_changed', function() {
-      alert(layer.getStatus());
-  });*/
+  console.log(layer)
 
 }
