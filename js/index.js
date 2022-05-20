@@ -1,19 +1,19 @@
-var PCTsampleKmlFileURL_part1 = "https://drive.google.com/uc?export=download&id=0B9IhMY-mND_fMUtoYmlhNDlQRkU";
-var PCTsampleKmlFileURL_part2 = "https://drive.google.com/uc?export=download&id=0B9IhMY-mND_faW5tUVpMQ3NnaVE";  //"https://drive.google.com/uc?export=download&id=0B9IhMY-mND_fZlEtN3pHVGVhRlE";
-var shikokuKmlFileURL = "https://drive.google.com/uc?export=download&id=0B9IhMY-mND_fT3V2VFFZR0dyaEk";
+var PCTsampleKmlFileURL_part1 = "https://storage.googleapis.com/delta-map-data/PCT/halfmile-track-2015-11.kmz";
+var PCTsampleKmlFileURL_part2 = "https://storage.googleapis.com/delta-map-data/PCT/halfmile-track-2015-2.kmz"; 
+var shikokuKmlFileURL = "https://storage.googleapis.com/delta-map-data/Shikoku%20main%20track.kmz";
 var initializedMaps = [];
 var PCTmap;
 var PCTActualTrace = [];
 var ChinaActualTrace = [];
 
-PCTActualTrace.push("https://drive.google.com/uc?export=download&id=0B9IhMY-mND_faTRuMjRWNkswVGs"); // 13 avril - 4 mai AM.
-PCTActualTrace.push("https://drive.google.com/uc?export=download&id=0B9IhMY-mND_fN1U3SWhzYkFBbDg"); // 4 mai PM - 5 juin AM
-PCTActualTrace.push("https://drive.google.com/uc?export=download&id=0B9IhMY-mND_fSEs4blNGM1lkcHc"); // 5 juin PM - 5 juillet
-PCTActualTrace.push("https://drive.google.com/uc?export=download&id=0B9IhMY-mND_fTjBFOHNOdXhYaFk"); // 5 juillet - 5 aout
-PCTActualTrace.push("https://drive.google.com/uc?export=download&id=0B9IhMY-mND_fVVQtazVuMXZ1dEk"); // 5 aout - 5 septembre
-PCTActualTrace.push("https://drive.google.com/uc?export=download&id=0B9IhMY-mND_fajNyRjNCQkR1Wnc"); // 5 septembre - ...
+PCTActualTrace.push("https://storage.googleapis.com/delta-map-data/PCT/First_Part.kml"); // 13 avril - 4 mai AM.
+PCTActualTrace.push("https://storage.googleapis.com/delta-map-data/PCT/Second_part_04-05_PM.kml"); // 4 mai PM - 5 juin AM
+PCTActualTrace.push("https://storage.googleapis.com/delta-map-data/PCT/ThirdPart_05-06.kml"); // 5 juin PM - 5 juillet
+PCTActualTrace.push("https://storage.googleapis.com/delta-map-data/PCT/Fourth_part_05-07.kml"); // 5 juillet - 5 aout
+PCTActualTrace.push("https://storage.googleapis.com/delta-map-data/PCT/Fifth_part_05-08.kml"); // 5 aout - 5 septembre
+PCTActualTrace.push("https://storage.googleapis.com/delta-map-data/PCT/Sixth_part_05-09.kml"); // 5 septembre - ...
 
-ChinaActualTrace.push("https://drive.google.com/uc?export=download&id=1wb5UYf15pxT6DipbSlZ0714QHOzLSknc"); // Septembre 2018
+ChinaActualTrace.push("https://storage.googleapis.com/delta-map-data/China_spot_messages.kml"); // Septembre 2018
 
 $( document ).ready(function() {
 
@@ -41,13 +41,13 @@ function initStartMap()
 
   for (i = 0; i < PCTActualTrace.length; i++) {
       addLayerToMap(PCTmap, PCTActualTrace[i], true, i+1);
-  }
+  } 
 
   Chinamap = initKmlMap("ChinaMap", ChinaActualTrace[0]);
 
   for (i = 1; i < ChinaActualTrace.length; i++) {
       addLayerToMap(Chinamap, ChinaActualTrace[i], true, i+1);
-  }
+  } 
 }
 
 /**
@@ -73,6 +73,7 @@ function initKmlMap(mapID, kmlFileUrl, kmlFileUrl2) {
     map : myMap,
     zIndex: 0
   });
+  console.log(myLayer)
 
   if (kmlFileUrl2)
   {
@@ -82,11 +83,11 @@ function initKmlMap(mapID, kmlFileUrl, kmlFileUrl2) {
       zIndex: 1
     });
 
-    /*myLayer2.addListener('status_changed', function() {
+    myLayer2.addListener('status_changed', function() {
         alert(myLayer2.getStatus());
-    });*/
+    });
 
-  }
+  } 
 
   return myMap;
 }
