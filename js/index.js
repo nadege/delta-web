@@ -70,7 +70,7 @@ function initKmlMap(mapID, kmlFileUrl, kmlFileUrl2) {
   initializedMaps.push(mapID);
 
   var myMap = new google.maps.Map(document.getElementById(mapID), {
-    zoom: 11,
+    zoom: 5,
     center: {lat: 41.876, lng: -87.624}
   });
 
