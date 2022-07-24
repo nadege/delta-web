@@ -15,6 +15,8 @@ PCTActualTrace.push("https://storage.googleapis.com/delta-map-data/PCT/Sixth_par
 
 ChinaActualTrace.push("https://storage.googleapis.com/delta-map-data/China_spot_messages.kml"); // Septembre 2018
 
+var corsicaActualTraceURL = "https://storage.googleapis.com/delta-map-data/Corse.kml"; // May 2022
+
 $( document ).ready(function() {
 
     $('.panel-collapse').on('shown.bs.collapse', function () {
@@ -26,6 +28,14 @@ $( document ).ready(function() {
           case "shikoku-collapse":
             initKmlMap("shikokuMap", shikokuKmlFileURL);
           break;
+
+          case "china-collapse":
+              Chinamap = initKmlMap("ChinaMap", ChinaActualTrace[0]);
+
+              for (i = 1; i < ChinaActualTrace.length; i++) {
+                  addLayerToMap(Chinamap, ChinaActualTrace[i], true, i+1);
+              } 
+          break;                
         }
     });
 
@@ -43,11 +53,8 @@ function initStartMap()
       addLayerToMap(PCTmap, PCTActualTrace[i], true, i+1);
   } 
 
-  Chinamap = initKmlMap("ChinaMap", ChinaActualTrace[0]);
+  initKmlMap("CorsicaMap", corsicaActualTraceURL);
 
-  for (i = 1; i < ChinaActualTrace.length; i++) {
-      addLayerToMap(Chinamap, ChinaActualTrace[i], true, i+1);
-  } 
 }
 
 /**
