@@ -29,7 +29,7 @@ $( document ).ready(function() {
             initKmlMap("shikokuMap", shikokuKmlFileURL);
           break;
 
-          case "china-collapse":
+          case "China-collapse":
               Chinamap = initKmlMap("ChinaMap", ChinaActualTrace[0]);
 
               for (i = 1; i < ChinaActualTrace.length; i++) {
