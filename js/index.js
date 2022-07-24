@@ -104,6 +104,7 @@ function addLayerToMap(map, kmlFileUrl, infoWindow, zIndex){
     suppressInfoWindows: !infoWindow,
     map : map,
     zIndex: zIndex
+    preserveViewport: true
   });
   console.log(layer)
 
