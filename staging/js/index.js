@@ -17,7 +17,8 @@ ChinaActualTrace.push("https://storage.googleapis.com/delta-map-data/China_spot_
 
 var corsicaActualTraceURL = "https://storage.googleapis.com/delta-map-data/Corse.kml"; // May 2022
 
-//var TATKmlFile = "https://storage.googleapis.com/delta-map-data/PCT/halfmile-track-2015-11.kmz";
+var TATmap;
+var TATKmlFile = "https://storage.googleapis.com/delta-map-data/TeAraroa/TeAraroaTrail_trace_only.kml";
 var TATActualTrace = [];
 TATActualTrace.push("https://storage.googleapis.com/delta-map-data/TeAraroa/First_Part_12-10.kml"); // 12 octobre - ...
 
@@ -61,7 +62,10 @@ function initStartMap()
   initKmlMap("CorsicaMap", corsicaActualTraceURL);
 
   // TODO init with "target trace" and for loop for multi-part actual trace
-  initKmlMap("NewZealandMap", TATActualTrace[0]);
+  TATmap = initKmlMap("NewZealandMap", TATKmlFile);
+  for (i = 0; i < TATActualTrace.length; i++) {
+      addLayerToMap(TATmap, TATActualTrace[i], true, i+1);
+  }
 
 }
 
