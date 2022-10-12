@@ -29,7 +29,9 @@ def main():
         if row[0].value == "Check In/OK":
             kml.newpoint(
                 coords=[get_lat_long(row[3].value)],
-                #description=""
+                description="Je suis sur le Te Araroa, je plante ma tente ici !"
+                            "Tout va bien."
+                            "Bisous"
             ),
         elif row[0].value == "Custom Message":
             kml.newpoint(
