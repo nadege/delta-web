@@ -17,6 +17,11 @@ ChinaActualTrace.push("https://storage.googleapis.com/delta-map-data/China_spot_
 
 var corsicaActualTraceURL = "https://storage.googleapis.com/delta-map-data/Corse.kml"; // May 2022
 
+//var TATKmlFile = "https://storage.googleapis.com/delta-map-data/PCT/halfmile-track-2015-11.kmz";
+var TATActualTrace = [];
+TATActualTrace.push("https://storage.googleapis.com/delta-map-data/TeAraroa/First_Part_12-10.kml"); // 12 octobre - ...
+
+
 $( document ).ready(function() {
 
     $('.panel-collapse').on('shown.bs.collapse', function () {
@@ -54,6 +59,9 @@ function initStartMap()
   } 
 
   initKmlMap("CorsicaMap", corsicaActualTraceURL);
+
+  // TODO init with "target trace" and for loop for multi-part actual trace
+  initKmlMap("NewZealandMap", TATActualTrace[0]);
 
 }
 
