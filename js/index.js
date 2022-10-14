@@ -20,7 +20,7 @@ var corsicaActualTraceURL = "https://storage.googleapis.com/delta-map-data/Corse
 var TATmap;
 var TATKmlFile = "https://storage.googleapis.com/delta-map-data/TeAraroa/TeAraroaTrail_trace_only.kml";
 var TATActualTrace = [];
-TATActualTrace.push("https://storage.googleapis.com/delta-map-data/TeAraroa/First_Part_12-10.kml"); // 12 octobre - ...
+TATActualTrace.push("https://storage.googleapis.com/delta-map-data/TeAraroa/First_Part_12-10_2.kml"); // 12 octobre - ...
 
 
 $( document ).ready(function() {
@@ -53,6 +53,13 @@ $( document ).ready(function() {
 // Init these maps as the panel for the PCT and China are opened from start
 function initStartMap()
 {
+  // TODO init with "target trace" and for loop for multi-part actual trace
+  TATmap = initKmlMap("NewZealandMap", TATKmlFile);
+  for (i = 0; i < TATActualTrace.length; i++) {
+      addLayerToMap(TATmap, TATActualTrace[i], true, i+1);
+  }
+  
+  
   PCTmap = initKmlMap("PCTMap", PCTsampleKmlFileURL_part1, PCTsampleKmlFileURL_part2);
 
   for (i = 0; i < PCTActualTrace.length; i++) {
@@ -61,10 +68,7 @@ function initStartMap()
 
   initKmlMap("CorsicaMap", corsicaActualTraceURL);
 
-  TATmap = initKmlMap("NewZealandMap", TATKmlFile);
-  for (i = 0; i < TATActualTrace.length; i++) {
-      addLayerToMap(TATmap, TATActualTrace[i], true, i+1);
-  }
+
 
 }
 
