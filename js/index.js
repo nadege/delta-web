@@ -20,7 +20,8 @@ var corsicaActualTraceURL = "https://storage.googleapis.com/delta-map-data/Corse
 var TATmap;
 var TATKmlFile = "https://storage.googleapis.com/delta-map-data/TeAraroa/TeAraroaTrail_trace_only.kml";
 var TATActualTrace = [];
-TATActualTrace.push("https://storage.googleapis.com/delta-map-data/TeAraroa/First_Part_12-10_2.kml"); // 12 octobre - ...
+TATActualTrace.push("https://storage.googleapis.com/delta-map-data/TeAraroa/First_Part_12-10_2.kml"); // 12 octobre - 11 novembre
+TATActualTrace.push("https://storage.googleapis.com/delta-map-data/TeAraroa/Second_Part_12-11.kml"); // 12 novembre - ...
 
 
 $( document ).ready(function() {
