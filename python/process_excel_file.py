@@ -36,7 +36,9 @@ def main():
         elif row[0].value == "Custom Message":
             kml.newpoint(
                 coords=[get_lat_long(row[3].value)],
-                #description=""
+                description="Un peu de repos sur le Te Araroa ou pas loin, tout va bien."
+                            "Je reprends la marche bientôt ;-)"
+                            "Bisous"
             ),
         elif row[0].value == "Unlimited Track":
             ut = ut + 1
