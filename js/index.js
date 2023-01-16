@@ -22,7 +22,9 @@ var TATKmlFile = "https://storage.googleapis.com/delta-map-data/TeAraroa/TeAraro
 var TATActualTrace = [];
 TATActualTrace.push("https://storage.googleapis.com/delta-map-data/TeAraroa/First_Part_12-10_2.kml"); // 12 octobre - 11 novembre
 TATActualTrace.push("https://storage.googleapis.com/delta-map-data/TeAraroa/Second_Part_12-11.kml"); // 12 novembre - 11 décembre
-TATActualTrace.push("https://storage.googleapis.com/delta-map-data/TeAraroa/Third_Part_12_12.kml"); // 12 décembre - ..
+TATActualTrace.push("https://storage.googleapis.com/delta-map-data/TeAraroa/Third_Part_12_12.kml"); // 12 décembre - 11 janvier
+TATActualTrace.push("https://storage.googleapis.com/delta-map-data/TeAraroa/Fourth_Part_12_01.kml"); // 12 janvier - ...
+
 
 
 $( document ).ready(function() {
