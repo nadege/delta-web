@@ -43,6 +43,9 @@ def main():
         elif row[0].value == "Unlimited Track":
             ut = ut + 1
             coords.append(get_lat_long(row[3].value, row[6].value))
+        elif row[0].value == "SOS" and len(row) > 6 and row[3].value and row[6].value :
+            ut = ut + 1
+            coords.append(get_lat_long(row[3].value, row[6].value))
         elif row[0].value == "Powered On":
             pass
         else:
