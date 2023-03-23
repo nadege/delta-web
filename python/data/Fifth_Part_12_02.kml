@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2">
+    <Document id="1">
+        <Style id="19">
+            <LineStyle id="18">
+                <color>ff0000ff</color>
+                <colorMode>normal</colorMode>
+                <width>4</width>
+            </LineStyle>
+        </Style>
+        <Placemark id="3">
+            <description>Je suis sur le Te Araroa, je plante ma tente ici !Tout va bien.Bisous</description>
+            <Point id="2">
+                <coordinates>167.88138,-45.80391,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="5">
+            <description>Je suis sur le Te Araroa, je plante ma tente ici !Tout va bien.Bisous</description>
+            <Point id="4">
+                <coordinates>167.86818,-45.94307,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="7">
+            <description>Je suis sur le Te Araroa, je plante ma tente ici !Tout va bien.Bisous</description>
+            <Point id="6">
+                <coordinates>167.8521,-46.07524,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="9">
+            <description>Je suis sur le Te Araroa, je plante ma tente ici !Tout va bien.Bisous</description>
+            <Point id="8">
+                <coordinates>167.86028,-46.26276,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="11">
+            <description>Je suis sur le Te Araroa, je plante ma tente ici !Tout va bien.Bisous</description>
+            <Point id="10">
+                <coordinates>168.00842,-46.3624,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="13">
+            <description>Je suis sur le Te Araroa, je plante ma tente ici !Tout va bien.Bisous</description>
+            <Point id="12">
+                <coordinates>168.35588,-46.41855,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="15">
+            <description>Je suis sur le Te Araroa, je plante ma tente ici !Tout va bien.Bisous</description>
+            <Point id="14">
+                <coordinates>168.35718,-46.61343,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="17">
+            <name>Pathway</name>
+            <styleUrl>#19</styleUrl>
+            <LineString id="16">
+                <coordinates>167.94055,-45.77951,470.0 167.94047,-45.77945,0.0 167.92296,-45.78134,0.0 167.90948,-45.78185,836.0 167.90147,-45.7834,995.0 167.89627,-45.78343,1028.0 167.8898,-45.79115,842.0 167.8813,-45.80411,386.0 167.88457,-45.81727,0.0 167.87298,-45.81427,0.0 167.87538,-45.82079,518.0 167.85822,-45.83173,332.0 167.84541,-45.84461,0.0 167.82884,-45.85345,308.0 167.81342,-45.8631,407.0 167.82397,-45.87411,311.0 167.83432,-45.87939,257.0 167.83725,-45.88379,0.0 167.84146,-45.89276,338.0 167.85573,-45.90068,362.0 167.85243,-45.90828,197.0 167.84911,-45.92528,128.0 167.86084,-45.93816,119.0 167.86803,-45.94312,113.0 167.88884,-45.94409,0.0 167.89699,-45.95752,176.0 167.90132,-45.96855,356.0 167.89993,-45.97293,527.0 167.90003,-46.01987,0.0 167.90587,-46.03223,0.0 167.91188,-46.04472,44.0 167.91072,-46.06337,26.0 167.92348,-46.07861,0.0 167.9282,-46.08252,0.0 167.92691,-46.09415,107.0 167.85214,-46.0753,95.0 167.84029,-46.0925,125.0 167.82284,-46.15212,0.0 167.82979,-46.161,0.0 167.83185,-46.17091,770.0 167.82832,-46.19136,503.0 167.83732,-46.19835,0.0 167.84462,-46.20595,734.0 167.83671,-46.21764,0.0 167.83517,-46.2224,683.0 167.83649,-46.22684,0.0 167.84155,-46.23701,737.0 167.83917,-46.24921,776.0 167.84258,-46.26146,698.0 167.85995,-46.26297,461.0 167.85429,-46.28938,320.0 167.85017,-46.31798,251.0 167.84364,-46.32883,131.0 167.832,-46.33538,0.0 167.85869,-46.34877,20.0 168.01682,-46.34998,20.0 168.02441,-46.35748,-16.0 168.05269,-46.34275,0.0 168.08531,-46.33975,11.0 168.11932,-46.34628,11.0 168.14743,-46.35789,11.0 168.17468,-46.37404,11.0 168.20201,-46.39807,2.0 168.21885,-46.4198,0.0 168.2355,-46.438,14.0 168.2555,-46.4347,0.0 168.26846,-46.43268,2.0 168.29722,-46.43224,0.0 168.32477,-46.42366,8.0 168.35266,-46.41801,14.0 168.35487,-46.41924,-10.0 168.33913,-46.42438,-1.0 168.3523,-46.44685,0.0 168.35651,-46.46539,11.0 168.37949,-46.48051,11.0 168.37645,-46.4959,17.0 168.35365,-46.50923,5.0 168.32155,-46.51758,2.0 168.30389,-46.53723,23.0 168.29913,-46.56092,0.0 168.30231,-46.57298,11.0 168.30573,-46.58841,14.0 168.31842,-46.60265,65.0 168.32213,-46.61732,53.0 168.33142,-46.62021,143.0 168.33875,-46.61549,266.0 168.3428,-46.61356,188.0 168.35451,-46.61328,53.0 168.35725,-46.61343,17.0</coordinates>
+            </LineString>
+        </Placemark>
+    </Document>
+</kml>
